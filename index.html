@@ -1,0 +1,1133 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Родион Шоцкий — домашняя страница</title>
+  <meta
+    name="description"
+    content="Домашняя страница Родиона Шоцкого (rodya.ru): быстрые ссылки на сервисы, проекты и инструменты."
+  >
+  <meta property="og:title" content="Родион Шоцкий — домашняя страница">
+  <meta property="og:site_name" content="Rodya.ru">
+  <meta property="og:url" content="https://rodya.ru/">
+  <meta
+    property="og:description"
+    content="Домашняя страница Родиона Шоцкого: сервисы, проекты и контакты в одном месте."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://rodya.ru/images/r-logo.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Родион Шоцкий — домашняя страница">
+  <meta
+    name="twitter:description"
+    content="Домашняя страница Родиона Шоцкого: быстрые ссылки на сервисы и проекты."
+  >
+  <meta name="twitter:image" content="https://rodya.ru/images/r-logo.png">
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/assets/icons/apple-icon-180x180.png"
+  >
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/assets/icons/favicon-32x32.png"
+  >
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/assets/icons/favicon-16x16.png"
+  >
+  <link rel="shortcut icon" href="/assets/icons/favicon.ico">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#ffffff">
+  <script src="scripts/main.js?v=6"></script>
+  <!-- Schema.org microdata -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Родион Шоцкий",
+      "url": "https://rodya.ru/",
+      "email": "ya@rodya.ru",
+      "sameAs": [
+        "https://github.com/yarodya"
+      ]
+    }
+  </script>
+  <style type="text/css">
+    * {
+      margin: 0;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    :root {
+      --tile: 128px;
+      --half: 64px;
+      --grid: calc(var(--tile) * 4);
+    }
+
+    .wrapper {
+      min-height: 100%;
+      height: auto !important;
+      height: 100%;
+      margin: 0 auto -40px;
+    }
+
+    .wrapper .icons {
+      padding: 10px;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: var(--grid);
+    }
+
+    .footer,
+    .push {
+      height: 40px;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    .item {
+      width: var(--tile);
+      height: var(--tile);
+      float: left;
+      margin: 0;
+      position: relative;
+    }
+
+    .item .sub {
+      width: var(--half);
+      height: var(--half);
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: calc(var(--half) * 0.75);
+      line-height: var(--half);
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .item .sub.small {
+      font-size: calc(var(--half) * 0.375);
+    }
+
+    .item .sub.bottom {
+      top: var(--half);
+    }
+
+    .item .sub.right {
+      left: var(--half);
+    }
+
+    .item .sub img {
+      width: var(--half);
+      height: var(--half);
+    }
+
+    .item svg {
+      position: absolute;
+      width: calc(var(--tile) * 0.234);
+      top: 0;
+      left: 0;
+      color: rgb(0 0 0 / 24%);
+    }
+
+    .item svg:hover {
+      width: calc(var(--tile) * 0.328);
+      top: calc(var(--tile) * -0.055);
+      left: calc(var(--tile) * -0.055);
+      transition: 70ms;
+      color: rgb(0 0 0 / 24%);
+    }
+
+    .item .drop {
+      text-align: center;
+      float: left;
+      opacity: 0.1;
+      font-size: calc(var(--half) * 0.5);
+      transition: 80ms;
+      line-height: calc(var(--half) * 0.47);
+      text-decoration: none;
+      width: calc(var(--half) * 0.5);
+      height: calc(var(--half) * 0.5);
+      color: black;
+    }
+
+    .item .drop:hover {
+      opacity: 1;
+    }
+
+    .item .drop.rita {
+      right: 0;
+    }
+
+    .item .main {
+      position: absolute;
+      width: var(--half);
+      height: var(--half);
+      bottom: 0;
+      right: 0;
+      text-decoration: none;
+      font-size: var(--half);
+      float: none;
+      line-height: var(--half);
+    }
+
+    .item.weather {
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .item.weather a {
+      height: var(--tile);
+      display: block;
+      line-height: var(--tile);
+      color: black;
+      text-decoration: none;
+      font-size: calc(var(--tile) * 0.59);
+      font-weight: bold;
+    }
+
+    .item.sheets {
+      background-image: url(/images/sheets.png);
+      background-size: contain;
+    }
+
+    .copyright {
+      font-family: "Open Sans", Arial, sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      padding: 0 10px;
+      text-align: right;
+    }
+
+    img {
+      width: var(--tile);
+      height: var(--tile);
+    }
+
+    .item .jira {
+      position: absolute;
+      width: calc(var(--tile) * 0.4375);
+      height: calc(var(--tile) * 0.4375);
+      transition: 70ms;
+      background: rgb(0 0 0 / 6%);
+      border-radius: 50%;
+      color: rgb(255 255 255 / 100%);
+      text-align: center;
+      line-height: calc(var(--tile) * 0.4375);
+      margin: calc(var(--tile) * 0.031);
+      text-decoration: none;
+      font-family: monospace;
+      font-size: calc(var(--tile) * 0.25);
+      cursor: pointer;
+      border: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .item .jira:hover {
+      width: var(--half);
+      height: var(--half);
+      color: rgb(255 255 255 / 100%);
+      line-height: var(--half);
+      margin: 0;
+      background: rgb(0 0 0 / 12%);
+    }
+
+    .item .jira.tl {
+      top: 0;
+      left: 0;
+    }
+
+    .item .jira.tr {
+      top: 0;
+      left: var(--half);
+    }
+
+    .item .jira.bl {
+      top: var(--half);
+      left: 0;
+    }
+
+    .item .jira.br {
+      top: var(--half);
+      left: var(--half);
+    }
+
+    .item .jira.lg {
+      font-size: calc(var(--tile) * 0.25);
+    }
+
+    .item .jira.sm {
+      font-size: calc(var(--tile) * 0.156);
+    }
+
+    .item .gmail {
+      color: white;
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      line-height: var(--half);
+      text-align: center;
+      text-decoration: none;
+      font-family: monospace;
+      font-size: calc(var(--half) * 0.375);
+    }
+
+    .item .gmail:hover {
+      background: rgb(0 0 0 / 8%);
+      text-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    }
+
+    .item.weather .rain {
+      position: absolute;
+      background: rgb(0 0 0 / 8%);
+      width: calc(var(--tile) * 0.375);
+      height: calc(var(--tile) * 0.375);
+      right: 0;
+      bottom: 0;
+      font-size: calc(var(--tile) * 0.31);
+      text-align: right;
+      line-height: calc(var(--tile) * 0.4375);
+      text-decoration: none;
+      border-radius: calc(var(--tile) * 0.1875) 0 0 0;
+      transition: 70ms;
+    }
+
+    .item.weather .rain:hover {
+      box-shadow: 0 0 10px rgb(0 0 0 / 12%);
+    }
+
+    .item .miro {
+      position: absolute;
+      bottom: 0;
+      right: calc(var(--tile) * 0.86);
+      display: block;
+      width: calc(var(--tile) * 0.39);
+      text-align: center;
+      height: calc(var(--half) * 0.5);
+      overflow: hidden;
+      opacity: 0;
+      padding: 0 5px;
+      font-size: calc(var(--tile) * 0.227);
+      transition: 80ms;
+      line-height: calc(var(--tile) * 0.2);
+      text-decoration: none;
+      background: rgb(0 0 0 / 6%);
+      border-radius: var(--half);
+      color: rgb(255 255 255 / 100%);
+      font-family: monospace;
+    }
+
+    .item .miro:hover {
+      opacity: 1;
+      right: var(--tile);
+    }
+
+    .item .miro:last-child {
+      bottom: 0;
+    }
+
+    .item .miro:nth-last-child(2) {
+      bottom: calc(var(--half) * 0.5);
+    }
+
+    .item.docs {
+      background-image: url(/images/docs.png);
+      background-size: contain;
+    }
+
+    .gmail-container {
+      position: relative;
+      width: var(--tile);
+      height: var(--tile);
+    }
+
+    .gmail {
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      line-height: var(--half);
+      text-align: center;
+      font-family: monospace;
+      font-size: calc(var(--half) * 0.375);
+      color: white;
+      background: rgba(0, 0, 0, 0);
+      text-decoration: none;
+      transition: 70ms;
+    }
+
+    .gmail.top-left {
+      top: 0;
+      left: 0;
+    }
+
+    .gmail.top-right {
+      top: 0;
+      right: 0;
+    }
+
+    .gmail.bottom-left {
+      bottom: 0;
+      left: 0;
+    }
+
+    .gmail.bottom-right {
+      bottom: 0;
+      right: 0;
+    }
+
+    .gmail:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    .seo-container,
+    .gis-container {
+      position: relative;
+      width: var(--tile);
+      height: var(--tile);
+    }
+
+    .seo,
+    .gis {
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      line-height: var(--half);
+      text-align: center;
+      font-family: monospace;
+      font-size: calc(var(--half) * 0.28);
+      color: rgba(255, 255, 255, 0);
+      background: rgba(0, 0, 0, 0);
+      text-decoration: none;
+      transition: 70ms;
+    }
+
+    .seo.top-left,
+    .gis.top-left {
+      top: 0;
+      left: 0;
+    }
+
+    .seo.top-right,
+    .gis.top-right {
+      top: 0;
+      right: 0;
+    }
+
+    .seo.bottom-left,
+    .gis.bottom-left {
+      bottom: 0;
+      left: 0;
+    }
+
+    .seo.bottom-right,
+    .gis.bottom-right {
+      bottom: 0;
+      right: 0;
+    }
+
+    .seo:hover,
+    .gis:hover {
+      color: rgba(255, 255, 255, 1);
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    .localhost-container {
+      position: relative;
+      width: var(--tile);
+      height: var(--tile);
+    }
+
+    .localhost {
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      line-height: var(--half);
+      text-align: center;
+      font-family: monospace;
+      font-size: calc(var(--half) * 0.25);
+      color: rgba(0, 0, 0, 1);
+      background: rgba(0, 0, 0, 0);
+      text-decoration: none;
+      transition: 70ms;
+    }
+
+    .localhost.top-left {
+      top: 0;
+      left: 0;
+    }
+
+    .localhost.top-right {
+      top: 0;
+      right: 0;
+    }
+
+    .localhost.bottom-left {
+      bottom: 0;
+      left: 0;
+    }
+
+    .localhost.bottom-right {
+      bottom: 0;
+      right: 0;
+    }
+
+    .localhost:hover {
+      color: rgba(255, 255, 255, 1);
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    @media (max-width: 560px) {
+      :root {
+        --tile: calc((100vw - 20px) / 4);
+        --half: calc(var(--tile) / 2);
+      }
+
+      html,
+      body {
+        height: 100%;
+        min-height: 100%;
+        min-height: 100dvh;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .wrapper {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 0;
+        height: auto !important;
+        margin: 0;
+        padding: 8px 0;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+
+      .wrapper .icons {
+        position: static;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: var(--grid);
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+        box-sizing: content-box;
+      }
+
+      .push {
+        display: none;
+      }
+
+      .localhost-container {
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .footer {
+        flex: 0 0 auto;
+        height: auto;
+        position: relative;
+        padding: 8px 10px calc(8px + env(safe-area-inset-bottom, 0px));
+      }
+
+      .copyright {
+        font-size: 13px;
+      }
+    }
+
+    @media (hover: none) {
+      .gis-container:active .gis,
+      .seo-container:active .seo,
+      .gmail-container:active .gmail {
+        color: rgba(255, 255, 255, 1);
+        background: rgba(0, 0, 0, 0.8);
+      }
+    }
+  </style>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] =
+        m[i] ||
+        function () {
+          (m[i].a = m[i].a || []).push(arguments);
+        };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) {
+        if (document.scripts[j].src === r) {
+          return;
+        }
+      }
+      (k = e.createElement(t)),
+        (a = e.getElementsByTagName(t)[0]),
+        (k.async = 1),
+        (k.src = r),
+        a.parentNode.insertBefore(k, a);
+    })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(91976315, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true,
+    });
+  </script>
+  <noscript>
+    <div>
+      <img
+        src="https://mc.yandex.ru/watch/91976315"
+        style="position: absolute; left: -9999px"
+        alt=""
+      >
+    </div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+</head>
+<body>
+  <h1 style="display: none">Родион Шоцкий — домашняя страница</h1>
+  <div class="wrapper">
+    <div class="icons">
+      <div class="item localhost-container">
+        <a
+          href="http://localhost:8012/"
+          rel="nofollow noindex"
+          class="localhost top-left"
+          title="local rodya.ru"
+        >RR</a>
+        <a
+          href="http://localhost:5173/"
+          rel="nofollow noindex"
+          class="localhost top-right"
+          title="Plata landing"
+        >PLA</a>
+        <a
+          href="http://localhost:4320/"
+          rel="nofollow noindex"
+          class="localhost bottom-left"
+          title="VED landing"
+        >VED</a>
+        <a
+          href="http://localhost:8085/"
+          rel="nofollow noindex"
+          class="localhost bottom-right"
+          title="WP npvpn"
+        >VPN</a>
+      </div>
+
+      <div class="item">
+        <a
+          href="https://www.google.com/?gl=us&hl=en&pws=0&gws_rd=cr"
+          rel="nofollow noopener noreferrer"
+        >
+          <img src="images/google.png" alt="Google">
+        </a>
+      </div>
+
+      <div class="item">
+        <a
+          href="https://grafana.prod.ab.tech/d/b8845744-1390-4f7f-958c-0650de8fbb1d/platapjej?orgId=1&from=now-6M&to=now&timezone=browser"
+          rel="nofollow noopener noreferrer"
+          class="sub"
+          title="Аналитика заявок"
+        >
+          <img src="images/analytics.png" alt="Аналитика заявок">
+        </a>
+      </div>
+
+      <div class="item" style="font-size: 0">
+        <img src="images/jira.png" alt="Jira">
+        <a
+          class="jira tl lg"
+          href="https://ab-team-jr7ntb6e.atlassian.net/jira/software/projects/PRDT/boards/270?filter=labels%20%3D%20%D0%BF%D0%BB%D0%B0%D1%82%D0%B0&groupBy=none"
+          rel="nofollow noopener noreferrer"
+        >🤖</a>
+        <a
+          class="jira bl sm"
+          href="https://ab-team-jr7ntb6e.atlassian.net/jira/software/projects/VEDSEO/boards/72"
+          rel="nofollow noopener noreferrer"
+          style="display: none"
+        >SEO</a>
+        <a
+          class="jira br sm"
+          href="https://ab-team-jr7ntb6e.atlassian.net/jira/software/projects/VED/boards/2"
+          rel="nofollow noopener noreferrer"
+          style="display: none"
+        >DEV</a>
+        <a
+          class="jira tr lg"
+          href="https://ab-team-jr7ntb6e.atlassian.net/jira/software/projects/CAR/boards/436"
+          rel="nofollow noopener noreferrer"
+        >🏎️</a>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="item" style="font-size: 0">
+        <img src="images/yougile.png" alt="YouGile">
+        <a
+          class="jira tl lg"
+          href="https://yougile.com/team/9a0e05abf438/npvpn?lang=ru"
+          rel="nofollow noopener noreferrer"
+        >🗄️</a>
+        <!--
+        <a
+          class="jira"
+          href="https://itbcg.yougile.com/team/9a0e05abf438/%D0%92%D0%AD%D0%94__dash__%D0%9C%D0%B0%D1%81%D1%82%D0%B5%D1%80?lang=ru"
+          rel="nofollow noopener noreferrer"
+          style="top: 0; left: 64px; font-size: 32px"
+        >🤖</a>
+        <a
+          class="jira"
+          href="https://trello.com/b/8lmL7I10/blog"
+          rel="nofollow noopener noreferrer"
+          style="top: 0; left: 64px"
+        >📷</a>
+        <a
+          class="jira"
+          href="https://trello.com/b/mCmIRk0x/job"
+          rel="nofollow noopener noreferrer"
+          style="top: 64px; left: 0"
+        >🧑🏻‍💼</a>
+        -->
+      </div>
+
+      <div class="item">
+        <a
+          href="https://web1.online.sberbank.ru/pfm/alf"
+          rel="nofollow noopener noreferrer"
+          class="sub right"
+        >
+          <img src="images/sber.png" alt="Сбербанк">
+        </a>
+        <a
+          href="https://www.tbank-online.com/mybank/"
+          rel="nofollow noopener noreferrer"
+          class="sub"
+        >
+          <img src="images/tinkoff.png" alt="Тинькофф">
+        </a>
+        <a
+          href="https://www.ozon.ru/my/orderlist"
+          rel="nofollow noopener noreferrer"
+          class="sub bottom"
+        >
+          <img src="images/ozon.png" alt="Ozon">
+        </a>
+        <a
+          href="https://www.bybit.com/user/assets/records/statements"
+          rel="nofollow noopener noreferrer"
+          class="sub right bottom"
+        >
+          <img src="images/bybit.png" alt="Bybit">
+        </a>
+      </div>
+
+      <div class="item">
+        <a
+          class="sub"
+          href="https://ya.ru"
+          rel="nofollow noopener noreferrer"
+        >
+          <img src="images/yandex.png" alt="Yandex">
+        </a>
+        <a
+          class="sub left bottom"
+          href="https://meet.google.com/landing"
+          rel="nofollow noopener noreferrer"
+        >
+          <img src="images/meet.png" alt="Google Meet">
+        </a>
+        <a
+          class="sub right top"
+          href="https://calendar.360.yandex.ru/week?uid=1130000069493821"
+          rel="nofollow noopener noreferrer"
+        >📆</a>
+        <a
+          class="sub right bottom small"
+          href="https://meet.google.com/jwr-msua-ygw"
+          rel="nofollow noopener noreferrer"
+        >🟢</a>
+      </div>
+
+      <div class="item">
+        <a
+          href="https://host.npvpn.net/grafana/dashboards"
+          rel="nofollow noopener noreferrer"
+          class="sub"
+          title="Grafana"
+        >
+          <img src="images/grafana.png" alt="Grafana">
+        </a>
+        <a
+          href="https://metrika.yandex.ru/"
+          rel="nofollow noopener noreferrer"
+          class="sub bottom"
+        >
+          <img src="images/metrika.png" alt="Яндекс Метрика">
+        </a>
+        <a
+          href="https://app.ahrefs.com/dashboard"
+          rel="nofollow noopener noreferrer"
+          class="sub bottom right"
+        >
+          <img src="images/ahrefs.png" alt="Ahrefs">
+        </a>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="item gmail-container">
+        <a
+          href="https://mail.google.com/mail/u/0/#inbox"
+          rel="nofollow noopener noreferrer"
+          class="gmail top-left"
+        >1</a>
+        <!--a
+          href="https://mail.google.com/mail/u/1/#inbox"
+          rel="nofollow noopener noreferrer"
+          class="gmail top-right"
+        >2</a>
+        <a
+          href="https://wiki.mgfdev.ru/#all-updates"
+          rel="nofollow noopener noreferrer"
+          class="gmail bottom-left"
+        >CONF</a>
+        <a
+          href="https://outlook.office.com/mail/"
+          rel="nofollow noopener noreferrer"
+          class="gmail bottom-right"
+        >MS</a-->
+        <img src="images/gmail.png" alt="Gmail">
+      </div>
+
+      <div class="item weather">
+        <a
+          id="weather-temp"
+          href="https://weather.nsu.ru/old/"
+          rel="nofollow noopener noreferrer"
+        ></a>
+        <script>
+          try {
+            var cachedTemp = localStorage.getItem("nsu-temp");
+            if (cachedTemp) {
+              document.getElementById("weather-temp").innerHTML = cachedTemp;
+            }
+          } catch (err) {}
+        </script>
+        <a
+          class="rain"
+          href="https://yandex.ru/pogoda/ru/maps/nowcast?lon=37.6177&lat=55.7559&le_Lightning=1&ll=37.5936_55.7963&z=14"
+          rel="nofollow noopener noreferrer"
+        >🌦</a>
+      </div>
+
+      <div class="item gis-container">
+        <a
+          href="https://2gis.ru/moscow"
+          class="gis top-left"
+          rel="nofollow noopener noreferrer"
+          title="Москва"
+        >MSK</a>
+        <a
+          href="https://2gis.ru/spb"
+          class="gis top-right"
+          rel="nofollow noopener noreferrer"
+          title="Санкт-Петербург"
+        >SPB</a>
+        <a
+          href="https://2gis.ru/novosibirsk"
+          class="gis bottom-left"
+          rel="nofollow noopener noreferrer"
+          title="Новосибирск"
+        >NSK</a>
+        <img src="images/2gis.png" alt="2ГИС">
+      </div>
+
+      <div class="item">
+        <a
+          class="sub"
+          href="https://lk.alfadirect.ru/?login=rsshotskiy"
+          rel="nofollow noopener noreferrer"
+        >
+          <img src="images/alfadirect.png" alt="Альфа Директ">
+        </a>
+        <a
+          class="sub right"
+          href="https://trade.alfabank.ru/"
+          rel="nofollow noopener noreferrer"
+        >💼</a>
+      </div>
+
+      <div class="item">
+        <a
+          href="https://miro.com/"
+          rel="nofollow noopener noreferrer"
+        >
+          <img src="images/miro.png" alt="Miro">
+        </a>
+        <a href="https://miro.new/" rel="nofollow noopener noreferrer">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="plus-circle"
+            class="svg-inline--fa fa-plus-circle fa-w-16"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="currentColor"
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="https://miro.com/app/board/uXjVOeeNt-U=/"
+          class="miro"
+          rel="nofollow noopener noreferrer"
+        >rr</a>
+        <a
+          href="https://miro.com/app/board/uXjVO_Wd8-o=/"
+          class="miro"
+          rel="nofollow noopener noreferrer"
+        >sw</a>
+      </div>
+
+      <div class="item">
+        <a
+          class="sub"
+          href="https://web.whatsapp.com"
+          rel="nofollow noopener noreferrer"
+        >
+          <img src="images/whatsapp.png" alt="WhatsApp">
+        </a>
+        <a
+          class="sub right bottom"
+          href="https://chat.openai.com/chat"
+          rel="nofollow noopener noreferrer"
+        >
+          <img src="images/chatgpt.png" alt="ChatGPT">
+        </a>
+      </div>
+
+      <div class="item">
+        <a
+          href="https://noises.online/"
+          class="sub"
+          rel="nofollow noopener noreferrer"
+        >🎧</a>
+        <a
+          class="sub right"
+          href="https://www.youtube.com/@LofiGirl/streams"
+          rel="nofollow noopener noreferrer"
+        >
+          <img src="images/youtube-logo.png" alt="YouTube Lofi">
+        </a>
+        <a
+          class="sub right bottom"
+          href="https://next.music.yandex.ru/"
+          rel="nofollow noopener noreferrer"
+        >
+          <img src="images/music.png" alt="Яндекс Музыка">
+        </a>
+      </div>
+
+      <div class="item" style="font-size: 0">
+        <a
+          class="jira tl"
+          href="https://check-host.net/?lang=en"
+          rel="nofollow noopener noreferrer"
+        >🏠</a>
+        <span
+          class="jira bl"
+          role="button"
+          tabindex="0"
+          onclick="copyPassword(this)"
+          title="Скопировать пароль"
+        >🎲</span>
+        <a
+          class="jira tr"
+          href="https://github.com/yarodya?tab=repositories"
+        >👾</a>
+        <a
+          class="jira br"
+          href="https://mxtoolbox.com/DNSLookup.aspx"
+        >🔍</a>
+      </div>
+
+      <div class="clear"></div>
+
+      <div class="item docs">
+        <a
+          href="https://docs.new/"
+          class="drop"
+          rel="nofollow noopener noreferrer"
+        >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="plus-circle"
+            class="svg-inline--fa fa-plus-circle fa-w-16"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="currentColor"
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="https://docs.google.com/document/d/1VwjRE51G8fd74VO98ZQtzBovfZqCmQJ7bGbSRuQAYx8/edit#heading=h.6z70ztlk1psn"
+          class="drop"
+          rel="nofollow noopener noreferrer"
+        >🗄️</a>
+        <a
+          href="https://docs.google.com/document/"
+          class="drop main"
+          rel="nofollow noopener noreferrer"
+        >📂</a>
+      </div>
+
+      <div class="item sheets">
+        <a
+          href="https://sheets.new/"
+          class="drop"
+          rel="nofollow noopener noreferrer"
+        >
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="plus-circle"
+            class="svg-inline--fa fa-plus-circle fa-w-16"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="currentColor"
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="https://docs.google.com/spreadsheets/u/0/d/1hS5-_ODD5ek-siZWIEznx3VJTm_hL6S8OZ_4VAdbnvQ/edit?authuser=0"
+          class="drop"
+          rel="nofollow noopener noreferrer"
+        >💰</a>
+        <a
+          href="https://docs.google.com/spreadsheets/d/1d9HXfcbEZY5kP6s7RRWcEClv8psQ6xNGRWt3OBOCHUw/edit?gid=0#gid=0"
+          class="drop"
+          rel="nofollow noopener noreferrer"
+        >🗄️</a>
+        <a
+          href="https://docs.google.com/spreadsheets/d/14W7TYgCwPWXnpcuAFpLVbZ1QOsC9V14hGJav_cyy-1s/edit?gid=0#gid=0"
+          class="drop"
+          rel="nofollow noopener noreferrer"
+        >🧾</a>
+        <!--
+        <a
+          href="https://docs.google.com/spreadsheets/d/1_2XI_uIaQMAmHQcFPyyNDsTK-SWXHq_D6CSrP7HLTUk/edit?gid=587461194"
+          class="drop"
+          rel="nofollow noopener noreferrer"
+        >🌸</a>
+        -->
+        <a
+          href="https://docs.google.com/spreadsheets/d/1IdMu9EeVxaerDV82mPQ44LpOPceDoiKvFNyxMgwrdlA/edit?gid=462350523"
+          class="drop"
+          rel="nofollow noopener noreferrer"
+        >🤖</a>
+        <a
+          href="https://docs.google.com/spreadsheets/"
+          class="drop main"
+          rel="nofollow noopener noreferrer"
+        >📂</a>
+      </div>
+
+      <div class="item gis-container">
+        <a
+          href="https://npvpn1.ru/"
+          class="gis top-left"
+          title="npvpn1.ru"
+        >1</a>
+        <a
+          href="https://npvpn.ru/"
+          class="gis top-right"
+          title="npvpn.ru"
+        >RU</a>
+        <a
+          href="https://npvpn.net/"
+          class="gis bottom-left"
+          title="npvpn.net"
+        >NET</a>
+        <a
+          href="https://npvpn.com/"
+          class="gis bottom-right"
+          title="npvpn.com"
+        >COM</a>
+        <img src="images/npvpn.png" alt="NPVPN">
+      </div>
+
+      <div class="item seo-container">
+        <a
+          href="https://webmaster.yandex.ru/sites/"
+          class="seo top-left"
+          rel="nofollow noopener noreferrer"
+        >YA</a>
+        <a
+          href="https://search.google.com/search-console?resource_id=sc-domain%3Anpvpn.ru"
+          class="seo top-right"
+          rel="nofollow noopener noreferrer"
+        >GSC</a>
+        <a
+          href="https://wordstat.yandex.com/"
+          class="seo bottom-left"
+          rel="nofollow noopener noreferrer"
+        >WS</a>
+        <a
+          href="https://ahrefs.com/website-authority-checker"
+          class="seo bottom-right"
+          rel="nofollow noopener noreferrer"
+        >DR</a>
+        <img src="images/seo.png" alt="SEO инструменты">
+      </div>
+
+      <div class="clear"></div>
+    </div>
+    <div class="push"></div>
+  </div>
+  <div class="footer">
+    <p class="copyright">
+      2006–2026 &COPY; Шоцкий Родион <br>
+      e-mail: <a href="mailto:ya@rodya.ru">ya@rodya.ru</a>
+      ·
+      <a href="https://github.com/yarodya/rodya-ru">GitHub</a>
+    </p>
+  </div>
+</body>
+</html>
