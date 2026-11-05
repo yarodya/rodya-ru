@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://rodya.ru/">
   <meta
     property="og:description"
-    content="Домашняя страница Родиона Шоцкого: сервисы, проекты и контакты в одном месте."
+    content="Домашняя страница Родиона Шоцкого: быстрые ссылки на сервисы и проекты."
   >
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://rodya.ru/images/r-logo.png">
@@ -135,6 +135,20 @@
     .item .sub img {
       width: var(--half);
       height: var(--half);
+    }
+
+    .item .sub.wide {
+      width: var(--tile);
+      height: var(--half);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .item .sub.wide img {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
     }
 
     .item svg {
@@ -616,18 +630,6 @@
           title="local rodya.ru"
         >RR</a>
         <a
-          href="http://localhost:5173/"
-          rel="nofollow noindex"
-          class="localhost top-right"
-          title="Plata landing"
-        >PLA</a>
-        <a
-          href="http://localhost:4320/"
-          rel="nofollow noindex"
-          class="localhost bottom-left"
-          title="VED landing"
-        >VED</a>
-        <a
           href="http://localhost:8085/"
           rel="nofollow noindex"
           class="localhost bottom-right"
@@ -646,39 +648,13 @@
 
       <div class="item">
         <a
-          href="https://grafana.prod.ab.tech/d/b8845744-1390-4f7f-958c-0650de8fbb1d/platapjej?orgId=1&from=now-6M&to=now&timezone=browser"
+          href="https://www.loom.com/looms/videos"
           rel="nofollow noopener noreferrer"
-          class="sub"
-          title="Аналитика заявок"
+          class="sub wide"
+          title="Loom"
         >
-          <img src="images/analytics.png" alt="Аналитика заявок">
+          <img src="images/loom.png" alt="Loom">
         </a>
-      </div>
-
-      <div class="item" style="font-size: 0">
-        <img src="images/jira.png" alt="Jira">
-        <a
-          class="jira tl lg"
-          href="https://ab-team-jr7ntb6e.atlassian.net/jira/software/projects/PRDT/boards/270?filter=labels%20%3D%20%D0%BF%D0%BB%D0%B0%D1%82%D0%B0&groupBy=none"
-          rel="nofollow noopener noreferrer"
-        >🤖</a>
-        <a
-          class="jira bl sm"
-          href="https://ab-team-jr7ntb6e.atlassian.net/jira/software/projects/VEDSEO/boards/72"
-          rel="nofollow noopener noreferrer"
-          style="display: none"
-        >SEO</a>
-        <a
-          class="jira br sm"
-          href="https://ab-team-jr7ntb6e.atlassian.net/jira/software/projects/VED/boards/2"
-          rel="nofollow noopener noreferrer"
-          style="display: none"
-        >DEV</a>
-        <a
-          class="jira tr lg"
-          href="https://ab-team-jr7ntb6e.atlassian.net/jira/software/projects/CAR/boards/436"
-          rel="nofollow noopener noreferrer"
-        >🏎️</a>
       </div>
 
       <div class="clear"></div>
