@@ -290,23 +290,6 @@
       font-size: calc(var(--tile) * 0.156);
     }
 
-    .item .gmail {
-      color: white;
-      position: absolute;
-      width: 50%;
-      height: 50%;
-      line-height: var(--half);
-      text-align: center;
-      text-decoration: none;
-      font-family: monospace;
-      font-size: calc(var(--half) * 0.375);
-    }
-
-    .item .gmail:hover {
-      background: rgb(0 0 0 / 8%);
-      text-shadow: 0 0 10px rgb(0 0 0 / 30%);
-    }
-
     .item.weather .rain {
       position: absolute;
       background: rgb(0 0 0 / 8%);
@@ -363,50 +346,6 @@
     .item.docs {
       background-image: url(/images/docs.png);
       background-size: contain;
-    }
-
-    .gmail-container {
-      position: relative;
-      width: var(--tile);
-      height: var(--tile);
-    }
-
-    .gmail {
-      position: absolute;
-      width: 50%;
-      height: 50%;
-      line-height: var(--half);
-      text-align: center;
-      font-family: monospace;
-      font-size: calc(var(--half) * 0.375);
-      color: white;
-      background: rgba(0, 0, 0, 0);
-      text-decoration: none;
-      transition: 70ms;
-    }
-
-    .gmail.top-left {
-      top: 0;
-      left: 0;
-    }
-
-    .gmail.top-right {
-      top: 0;
-      right: 0;
-    }
-
-    .gmail.bottom-left {
-      bottom: 0;
-      left: 0;
-    }
-
-    .gmail.bottom-right {
-      bottom: 0;
-      right: 0;
-    }
-
-    .gmail:hover {
-      background: rgba(0, 0, 0, 0.8);
     }
 
     .seo-container,
@@ -573,8 +512,7 @@
 
     @media (hover: none) {
       .gis-container:active .gis,
-      .seo-container:active .seo,
-      .gmail-container:active .gmail {
+      .seo-container:active .seo {
         color: rgba(255, 255, 255, 1);
         background: rgba(0, 0, 0, 0.8);
       }
@@ -743,7 +681,7 @@
 
       <div class="item">
         <a
-          href="https://host.npvpn.net/grafana/dashboards"
+          href="https://host.npvpn.net/grafana/d/c18818d3-4de9-4d42-9686-1249391396b1/2-1-vpn?orgId=1&from=now-24h&to=now&timezone=Europe%2FMoscow&var-bot=$__all&var-presence_window=15&var-location=$__all&refresh=5m"
           rel="nofollow noopener noreferrer"
           class="sub"
           title="Grafana"
@@ -768,28 +706,13 @@
 
       <div class="clear"></div>
 
-      <div class="item gmail-container">
+      <div class="item">
         <a
           href="https://mail.google.com/mail/u/0/#inbox"
           rel="nofollow noopener noreferrer"
-          class="gmail top-left"
-        >1</a>
-        <!--a
-          href="https://mail.google.com/mail/u/1/#inbox"
-          rel="nofollow noopener noreferrer"
-          class="gmail top-right"
-        >2</a>
-        <a
-          href="https://wiki.mgfdev.ru/#all-updates"
-          rel="nofollow noopener noreferrer"
-          class="gmail bottom-left"
-        >CONF</a>
-        <a
-          href="https://outlook.office.com/mail/"
-          rel="nofollow noopener noreferrer"
-          class="gmail bottom-right"
-        >MS</a-->
-        <img src="images/gmail.png" alt="Gmail">
+        >
+          <img src="images/gmail.png" alt="Gmail">
+        </a>
       </div>
 
       <div class="item weather">
